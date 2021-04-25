@@ -11,15 +11,15 @@ import MapKit
 import CoreLocation
 
 struct Landmark: Hashable, Codable, Identifiable {
-    var name: String
-    var id: Int
-    var category: String
-    var city: String
-    var state: String
-    var isFeatured: Bool
-    var isFavorite: Bool
-    var park: String
-    var description: String
+    var name: String = ""
+    var id: Int = -1
+    var category: String = ""
+    var city: String = "N/A"
+    var state: String = "N/A"
+    var isFeatured: Bool = false
+    var isFavorite: Bool = false
+    var park: String = "N/A"
+    var description: String = ""
     
     private var imageName: String
     var image: Image {
